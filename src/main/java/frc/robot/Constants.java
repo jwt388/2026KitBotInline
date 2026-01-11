@@ -15,7 +15,15 @@ package frc.robot;
  * wherever the constants are needed, to reduce verbosity.
  */
 public final class Constants {
+  private Constants() {
+    // Prevent instantiation
+  }
+
   public static final class DriveConstants {
+    private DriveConstants() {
+      // Prevent instantiation
+    }
+
     // Motor controller IDs for drivetrain motors
     public static final int LEFT_LEADER_ID = 1;
     public static final int LEFT_FOLLOWER_ID = 2;
@@ -28,6 +36,10 @@ public final class Constants {
   }
 
   public static final class FuelConstants {
+    private FuelConstants() {
+      // Prevent instantiation
+    }
+
     // Motor controller IDs for Fuel Mechanism motors
     public static final int FEEDER_MOTOR_ID = 6;
     public static final int INTAKE_LAUNCHER_MOTOR_ID = 5;
@@ -48,6 +60,10 @@ public final class Constants {
   }
 
   public static final class OperatorConstants {
+    private OperatorConstants() {
+      // Prevent instantiation
+    }
+
     // Port constants for driver and operator controllers. These should match the
     // values in the Joystick tab of the Driver Station software
     public static final int DRIVER_CONTROLLER_PORT = 0;
